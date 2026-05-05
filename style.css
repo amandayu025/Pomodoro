@@ -1,0 +1,69 @@
+body{
+    background-image: url("images/background.png");
+    background-color: #fdf9d1;
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40px;
+    color: lemonchiffon;
+}
+#main{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#background{
+    background-color: #ee8f8f;
+    width: 1000px;
+    height: 415px;
+    border-radius: 30px;
+    position: absolute;
+}
+#timer{
+    font-size:100px;
+    text-align: center;
+    position: absolute;
+    margin-top: 150px;
+    color:lemonchiffon;
+}
+#top{
+    position:absolute;
+    margin-top:30px;
+    margin-left: 20px;
+}
+#bottom{
+    align-items: center;
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 250px;
+    margin-left: 20px;
+}
+.option{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color:lemonchiffon;
+    color: #ee8f8f;
+    font-size: 20px;
+}
+#start-stop{
+    background-image: url('images/play.png');
+    height: 30px;
+    width: 30px;
+    margin: 30px;
+}
+#reset{
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color:lemonchiffon;
+    color: #ee8f8f;
+    font-size: 15px; 
+}
+#work{
+    background-color: #ffd0d0;
+}
