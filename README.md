@@ -9,7 +9,7 @@ For now, there's only three modes, work (25 min), short break (5 min) and long b
 (even tho is really simple to use, i'll explain very briefly)
 ### Main page 
 
-<img width="600" height="400" alt="main screen" src="images/main_screen.png">
+<img width="600" height="400" alt="main screen" src="images/main_screen_pomodoro.png">
 
 1. Work mode: 25 min timer.
 2. Short break: 5 min timer.
