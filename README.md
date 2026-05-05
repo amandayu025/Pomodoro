@@ -16,3 +16,5 @@ For now, there's only three modes, work (25 min), short break (5 min) and long b
 3. Long break: 15 min timer
 4. Play/Pause button: Start, pause and continue the timer.
 5. Reset button: Reset and restart the timer.
+## AI use
+I used chatGPT to correct some mistakes of the JS code.
