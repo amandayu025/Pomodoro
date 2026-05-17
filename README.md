@@ -3,7 +3,7 @@
 A simple pomodoro timer website. The site was made with HTML,CSS and JS.
 It's really simple cuz I made this project to learn some JS basics :)
 
-For now, there's only three modes, work (25 min), short break (5 min) and long break (15 min).
+For now, there's only three modes, work (25 min), short break (5 min) and long break (15 min), and there's a playlist (made by me :D)
 
 ## Use instructions
 (even tho is really simple to use, i'll explain very briefly)
