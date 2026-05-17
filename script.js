@@ -8,12 +8,13 @@ let lBreakButton = document.getElementById("long-break");
 let work= 25*60;
 let s_break = 5*60;
 let l_break = 15*60;
-let timeLeft;
+let timeLeft=work;
+let timeLeftId=work;
 let timerInterval;
 function updateDisplay() {
     const minutes = Math.floor(timeLeft / 60);
     const seconds = timeLeft % 60;
-    document.getElementById("timer").textContent =
+    timer.textContent =
       String(minutes).padStart(2, '0') + ":" +
       String(seconds).padStart(2, '0');
 }
@@ -32,6 +33,10 @@ function start_stop() {
                     timeLeft--;
                     updateDisplay();
                 }
+                else{
+                    clearInterval(timerInterval);
+                    reset;
+                }
             }
         }, 1000);
     }
@@ -39,10 +44,17 @@ function start_stop() {
 function reset(){
     isRunning = false;
     playButton.style.backgroundImage = "url('images/play.png')";
-    timer.textContent = "25:00";
+    const minutesId = Math.floor(timeLeftId/60);
+    const secondsId = timeLeftId % 60;
+    timer.textContent =
+        String(minutesId).padStart(2,'0') + ":" +
+        String(secondsId).padStart(2,'0');
+    timeleft = timeLeftId;
+    clearInterval(timerInterval);
 }
 function setWork(){
     timeLeft = work;
+    timeLeftId = work;
     updateDisplay();
     isRunning = false;
     playButton.style.backgroundImage = "url('images/play.png')";
@@ -53,6 +65,7 @@ function setWork(){
 }
 function setShortBreak(){
     timeLeft = s_break;
+    timeLeftId = s_break;
     updateDisplay();
     isRunning = false;
     playButton.style.backgroundImage = "url('images/play.png')";
@@ -63,6 +76,7 @@ function setShortBreak(){
 }
 function setLongBreak(){
     timeLeft = l_break;
+    timeLeftId = l_break;
     updateDisplay();
     isRunning = false;
     playButton.style.backgroundImage = "url('images/play.png')";
