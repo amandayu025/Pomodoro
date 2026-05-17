@@ -9,7 +9,7 @@ h1{
     color: lemonchiffon;
 }
 #main{
-    left: 400px;
+    left: 200px;
     display: flex;
     flex-direction: column;
 }
